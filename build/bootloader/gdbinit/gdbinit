@@ -1,0 +1,2 @@
+source D:/workspace/esp32/Bai-tap/HTTP-ledcontrol/build/bootloader/gdbinit/symbols
+source D:/workspace/esp32/Bai-tap/HTTP-ledcontrol/build/bootloader/gdbinit/connect

@@ -1,0 +1,676 @@
+46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:627�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 27 2025 01:15:04[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1bf08h (114440) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=0002bf30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=0002bf54 vaddr=3ffb0000 size=03f00h ( 16128) load[0m
+[0;32mI (139) esp_image: segment 3: paddr=0002fe5c vaddr=40080000 size=001bch (   444) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=8cdf0h (577008) map[0m
+[0;32mI (346) esp_image: segment 5: paddr=000bce18 vaddr=400801bc size=1775ch ( 96092) load[0m
+[0;32mI (394) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (394) boot: Disabling RNG early entropy source...[0m
+[0;32mI (405) cpu_start: Multicore app[0m
+[0;32mI (413) cpu_start: Pro cpu start user code[0m
+[0;32mI (413) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (414) app_init: Application information:[0m
+[0;32mI (414) app_init: Project name:     HTTP-ledcontrol[0m
+[0;32mI (418) app_init: App version:      1[0m
+[0;32mI (422) app_init: Compile time:     Jul 27 2025 01:14:47[0m
+[0;32mI (427) app_init: ELF file SHA256:  9730e0159...[0m
+[0;32mI (431) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (435) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (439) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (443) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (447) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (453) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (458) heap_init: At 3FFB81B8 len 00027E48 (159 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (469) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (474) heap_init: At 40097918 len 000086E8 (33 KiB): IRAM[0m
+[0;32mI (481) spi_flash: detected chip: generic[0m
+[0;32mI (483) spi_flash: flash io: dio[0m
+[0;32mI (488) main_task: Started on CPU0[0m
+[0;32mI (498) main_task: Calling app_main()[0m
+[0;32mI (518) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (518) DHT_SENSOR: DHT Sensor Task Started[0m
+[0;32mI (538) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (548) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (548) HCSR04_WRAPPER: HC-SR04 sensor initialized successfully.[0m
+[0;32mI (548) APP_LOGIC: Application Logic Task Started[0m
+[0;32mI (558) APP_LOGIC: Person detected! Count: 1[0m
+[0;32mI (568) wifi:wifi driver task: 3ffc14b4, prio:23, stack:6656, core=0[0m
+[0;32mI (578) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (578) wifi:wifi certification version: v7.0[0m
+[0;32mI (578) wifi:config NVS flash: enabled[0m
+[0;32mI (578) wifi:config nano formatting: disabled[0m
+[0;32mI (588) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (588) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (598) wifi:Init management short buffer num: 32[0m
+[0;32mI (598) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (598) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (608) wifi:Init static rx buffer num: 10[0m
+[0;32mI (608) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (618) wifi_init: rx ba win: 6[0m
+[0;32mI (618) wifi_init: accept mbox: 6[0m
+[0;32mI (618) wifi_init: tcpip mbox: 32[0m
+[0;32mI (618) wifi_init: udp mbox: 6[0m
+[0;32mI (628) wifi_init: tcp mbox: 6[0m
+[0;32mI (628) wifi_init: tcp tx win: 5760[0m
+[0;32mI (628) wifi_init: tcp rx win: 5760[0m
+[0;32mI (638) wifi_init: tcp mss: 1440[0m
+[0;32mI (638) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (638) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (648) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (658) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (738) wifi:mode : sta (20:43:a8:e5:4d:4c)[0m
+[0;32mI (738) wifi:enable tsf[0m
+[0;32mI (748) WIFI_MANAGER: WiFi connecting to Tro 1...[0m
+[0;32mI (748) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (748) HCSR04_WRAPPER: HC-SR04 sensor initialized successfully.[0m
+[0;32mI (758) wifi:new:<5,0>, old:<1,0>, ap:<255,255>, sta:<5,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (768) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (768) WEB_SERVER: Web server started[0m
+[0;32mI (768) main_task: Returned from app_main()[0m
+[0;32mI (778) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (838) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (958) wifi:connected with Tro 1, aid = 7, channel 5, BW20, bssid = 4c:12:e8:40:45:30[0m
+[0;32mI (958) wifi:security: WPA2-PSK, phy: bgn, rssi: -49[0m
+[0;32mI (968) wifi:pm start, type: 1[0m
+
+[0;32mI (968) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1028) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (1048) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1278) APP_LOGIC: Person left.[0m
+[0;32mI (1548) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (2068) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (2198) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2588) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (3108) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (3378) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (3878) APP_LOGIC: Person detected! Count: 2[0m
+[0;32mI (5098) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (5368) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (5568) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (5638) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (5908) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (6158) APP_LOGIC: Person left.[0m
+[0;32mI (8658) APP_LOGIC: Person detected! Count: 3[0m
+[0;32mI (9128) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (10128) APP_LOGIC: Person left.[0m
+[0;32mI (10378) APP_LOGIC: Person detected! Count: 4[0m
+[0;32mI (10588) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (12088) APP_LOGIC: Person left.[0m
+[0;32mI (13338) APP_LOGIC: Person detected! Count: 5[0m
+[0;32mI (13788) APP_LOGIC: Person left.[0m
+[0;32mI (15608) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (18538) APP_LOGIC: Person detected! Count: 6[0m
+[0;32mI (18988) APP_LOGIC: Person left.[0m
+[0;32mI (20628) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (22988) APP_LOGIC: Person detected! Count: 7[0m
+[0;32mI (24188) APP_LOGIC: Person left.[0m
+[0;32mI (24688) APP_LOGIC: Person detected! Count: 8[0m
+[0;32mI (25138) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (25388) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (25648) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (25658) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (25908) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (26158) APP_LOGIC: Person left.[0m
+[0;32mI (30678) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (35698) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (40718) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (45738) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (50758) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+6
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 27 2025 01:15:04[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1bf08h (114440) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=0002bf30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=0002bf54 vaddr=3ffb0000 size=03f00h ( 16128) load[0m
+[0;32mI (139) esp_image: segment 3: paddr=0002fe5c vaddr=40080000 size=001bch (   444) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=8cdf0h (577008) map[0m
+[0;32mI (346) esp_image: segment 5: paddr=000bce18 vaddr=400801bc size=1775ch ( 96092) load[0m
+[0;32mI (394) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (394) boot: Disabling RNG early entropy source...[0m
+[0;32mI (405) cpu_start: Multicore app[0m
+[0;32mI (413) cpu_start: Pro cpu start user code[0m
+[0;32mI (413) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (414) app_init: Application information:[0m
+[0;32mI (414) app_init: Project name:     HTTP-ledcontrol[0m
+[0;32mI (418) app_init: App version:      1[0m
+[0;32mI (422) app_init: Compile time:     Jul 27 2025 01:14:47[0m
+[0;32mI (427) app_init: ELF file SHA256:  9730e0159...[0m
+[0;32mI (431) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (435) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (439) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (443) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (447) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (453) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (458) heap_init: At 3FFB81B8 len 00027E48 (159 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (469) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (474) heap_init: At 40097918 len 000086E8 (33 KiB): IRAM[0m
+[0;32mI (481) spi_flash: detected chip: generic[0m
+[0;32mI (483) spi_flash: flash io: dio[0m
+[0;32mI (488) main_task: Started on CPU0[0m
+[0;32mI (498) main_task: Calling app_main()[0m
+[0;32mI (518) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (518) DHT_SENSOR: DHT Sensor Task Started[0m
+[0;32mI (538) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (548) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (548) HCSR04_WRAPPER: HC-SR04 sensor initialized successfully.[0m
+[0;32mI (548) APP_LOGIC: Application Logic Task Started[0m
+[0;32mI (558) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (578) wifi:wifi driver task: 3ffc14b4, prio:23, stack:6656, core=0[0m
+[0;32mI (588) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (588) wifi:wifi certification version: v7.0[0m
+[0;32mI (588) wifi:config NVS flash: enabled[0m
+[0;32mI (588) wifi:config nano formatting: disabled[0m
+[0;32mI (598) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (598) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (598) wifi:Init management short buffer num: 32[0m
+[0;32mI (608) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (608) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (618) wifi:Init static rx buffer num: 10[0m
+[0;32mI (618) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (628) wifi_init: rx ba win: 6[0m
+[0;32mI (628) wifi_init: accept mbox: 6[0m
+[0;32mI (628) wifi_init: tcpip mbox: 32[0m
+[0;32mI (628) wifi_init: udp mbox: 6[0m
+[0;32mI (638) wifi_init: tcp mbox: 6[0m
+[0;32mI (638) wifi_init: tcp tx win: 5760[0m
+[0;32mI (638) wifi_init: tcp rx win: 5760[0m
+[0;32mI (638) wifi_init: tcp mss: 1440[0m
+[0;32mI (648) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (648) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (658) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (668) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (748) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (818) wifi:mode : sta (20:43:a8:e5:4d:4c)[0m
+[0;32mI (818) wifi:enable tsf[0m
+[0;32mI (818) WIFI_MANAGER: WiFi connecting to Tro 1...[0m
+[0;32mI (818) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (818) HCSR04_WRAPPER: HC-SR04 sensor initialized successfully.[0m
+[0;32mI (838) wifi:new:<5,0>, old:<1,0>, ap:<255,255>, sta:<5,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (838) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (848) WEB_SERVER: Web server started[0m
+[0;32mI (848) main_task: Returned from app_main()[0m
+[0;32mI (858) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (918) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1038) wifi:connected with Tro 1, aid = 6, channel 5, BW20, bssid = 4c:12:e8:40:45:30[0m
+[0;32mI (1038) wifi:security: WPA2-PSK, phy: bgn, rssi: -46[0m
+[0;32mI (1038) wifi:pm start, type: 1[0m
+
+[0;32mI (1038) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1098) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2308) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (5568) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (10588) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (14838) wifi:<ba-add>idx:0 (ifx:0, 4c:12:e8:40:45:30), tid:0, ssn:5, winSize:64[0m
+[0;33mW (15038) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (15038) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (15608) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (16618) APP_LOGIC: Person detected! Count: 1[0m
+[0;32mI (17318) APP_LOGIC: Person left.[0m
+[0;32mI (20628) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (24818) APP_LOGIC: Person detected! Count: 2[0m
+[0;32mI (25518) APP_LOGIC: Person left.[0m
+[0;32mI (25648) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (30668) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (32518) APP_LOGIC: Person detected! Count: 3[0m
+[0;32mI (32968) APP_LOGIC: Person left.[0m
+[0;32mI (35688) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (40708) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (45728) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (50748) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (55768) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (60788) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (65808) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;33mW (67768) httpd_uri: httpd_uri: URI '/data/aip' not found[0m
+[0;33mW (67768) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (70828) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (73588) APP_LOGIC: Person detected! Count: 4[0m
+[0;32mI (74038) APP_LOGIC: Person left.[0m
+[0;32mI (75848) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (80868) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (85888) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (90908) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (91538) APP_LOGIC: Person detected! Count: 5[0m
+[0;32mI (91988) APP_LOGIC: Person left.[0m
+[0;32mI (95928) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (98488) APP_LOGIC: Person detected! Count: 6[0m
+[0;32mI (99188) APP_LOGIC: Person left.[0m
+[0;32mI (100948) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (103478) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (103728) APP_LOGIC: Person detected! Count: 7[0m
+[0;32mI (104178) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (104428) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (104678) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (104928) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (105178) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (105428) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (105678) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (105928) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (105968) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (106178) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (106678) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (106928) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (107178) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (108428) APP_LOGIC: Person left.[0m
+[0;32mI (109178) APP_LOGIC: Person detected! Count: 8[0m
+[0;32mI (109628) APP_LOGIC: Person left.[0m
+[0;32mI (110988) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (116008) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (117648) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (117898) APP_LOGIC: Person detected! Count: 9[0m
+[0;32mI (118848) APP_LOGIC: Person left.[0m
+[0;32mI (121028) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (121848) APP_LOGIC: Person detected! Count: 10[0m
+[0;32mI (122548) APP_LOGIC: Person left.[0m
+[0;32mI (126048) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (128328) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (130328) APP_LOGIC: Person detected! Count: 11[0m
+[0;32mI (131068) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (133298) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (135298) APP_LOGIC: Person left.[0m
+[0;32mI (136088) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (139048) APP_LOGIC: Person detected! Count: 12[0m
+[0;32mI (139498) APP_LOGIC: Person left.[0m
+[0;32mI (141108) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (142108) WEB_SERVER: LED turned ON[0m
+[0;32mI (142728) WEB_SERVER: LED turned ON[0m
+[0;32mI (143438) WEB_SERVER: LED turned OFF[0m
+[0;32mI (143948) WEB_SERVER: LED turned OFF[0m
+[0;32mI (144278) WEB_SERVER: LED turned ON[0m
+[0;32mI (144978) WEB_SERVER: LED turned OFF[0m
+[0;32mI (146128) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (151148) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (156168) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (161188) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (166208) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (171228) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (176248) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (181008) APP_LOGIC: Person detected! Count: 13[0m
+[0;32mI (181268) DHT_SENSOR: Humidity: 63.0%, Temp: 29.0C[0m
+[0;32mI (181708) APP_LOGIC: Person left.[0m
+PI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 27 2025 01:15:04[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1bf08h (114440) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=0002bf30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=0002bf54 vaddr=3ffb0000 size=03f00h ( 16128) load[0m
+[0;32mI (139) esp_image: segment 3: paddr=0002fe5c vaddr=40080000 size=001bch (   444) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=8cdf0h (577008) map[0m
+[0;32mI (346) esp_image: segment 5: paddr=000bce18 vaddr=400801bc size=1775ch ( 96092) load[0m
+[0;32mI (394) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (394) boot: Disabling RNG early entropy source...[0m
+[0;32mI (405) cpu_start: Multicore app[0m
+[0;32mI (413) cpu_start: Pro cpu start user code[0m
+[0;32mI (413) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (413) app_init: Application information:[0m
+[0;32mI (414) app_init: Project name:     HTTP-ledcontrol[0m
+[0;32mI (418) app_init: App version:      1[0m
+I (421) app_init: Compile time:     Jul 27 2025 01:14:47
+[0;32mI (427) app_init: ELF file SHA256:  9730e0159...[0m
+[0;32mI (431) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (435) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (439) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (443) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (447) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (453) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (458) heap_init: At 3FFB81B8 len 00027E48 (159 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (469) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (474) heap_init: At 40097918 len 000086E8 (33 KiB): IRAM[0m
+[0;32mI (481) spi_flash: detected chip: generic[0m
+[0;32mI (483) spi_flash: flash io: dio[0m
+[0;32mI (488) main_task: Started on CPU0[0m
+[0;32mI (498) main_task: Calling app_main()[0m
+[0;32mI (518) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (518) DHT_SENSOR: DHT Sensor Task Started[0m
+[0;32mI (538) DHT_SENSOR: Humidity: 66.0%, Temp: 30.0C[0m
+[0;32mI (538) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (548) HCSR04_WRAPPER: HC-SR04 sensor initialized successfully.[0m
+[0;32mI (548) APP_LOGIC: Application Logic Task Started[0m
+[0;32mI (558) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (568) wifi:wifi driver task: 3ffc1538, prio:23, stack:6656, core=0[0m
+[0;32mI (578) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (578) wifi:wifi certification version: v7.0[0m
+[0;32mI (578) wifi:config NVS flash: enabled[0m
+[0;32mI (578) wifi:config nano formatting: disabled[0m
+[0;32mI (588) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (588) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (588) wifi:Init management short buffer num: 32[0m
+[0;32mI (598) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (598) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (608) wifi:Init static rx buffer num: 10[0m
+[0;32mI (608) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (618) wifi_init: rx ba win: 6[0m
+[0;32mI (618) wifi_init: accept mbox: 6[0m
+[0;32mI (618) wifi_init: tcpip mbox: 32[0m
+[0;32mI (618) wifi_init: udp mbox: 6[0m
+[0;32mI (628) wifi_init: tcp mbox: 6[0m
+[0;32mI (628) wifi_init: tcp tx win: 5760[0m
+[0;32mI (628) wifi_init: tcp rx win: 5760[0m
+[0;32mI (638) wifi_init: tcp mss: 1440[0m
+[0;32mI (638) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (638) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (648) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (658) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (738) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (758) wifi:mode : sta (20:43:a8:e5:4d:4c)[0m
+[0;32mI (758) wifi:enable tsf[0m
+[0;32mI (768) WIFI_MANAGER: WiFi connecting to Tro 1...[0m
+[0;32mI (768) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (768) HCSR04_WRAPPER: HC-SR04 sensor initialized successfully.[0m
+[0;32mI (778) wifi:new:<5,0>, old:<1,0>, ap:<255,255>, sta:<5,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (778) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (788) WEB_SERVER: Web server started[0m
+[0;32mI (788) main_task: Returned from app_main()[0m
+[0;32mI (798) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (828) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (828) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (928) wifi:connected with Tro 1, aid = 6, channel 5, BW20, bssid = 4c:12:e8:40:45:30[0m
+[0;32mI (928) wifi:security: WPA2-PSK, phy: bgn, rssi: -52[0m
+[0;32mI (938) wifi:pm start, type: 1[0m
+
+[0;32mI (938) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (968) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1098) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (1368) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (1638) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (1908) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (2158) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2178) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (2448) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (2718) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (2838) wifi:<ba-add>idx:0 (ifx:0, 4c:12:e8:40:45:30), tid:0, ssn:4, winSize:64[0m
+[0;32mI (2988) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (3258) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (3528) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (3798) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (4068) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (4338) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (4608) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (4878) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (5148) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (5418) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (5558) DHT_SENSOR: Humidity: 65.0%, Temp: 30.0C[0m
+[0;32mI (5688) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (5958) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (6228) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (6498) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (6768) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (7038) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (7308) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (7578) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (7848) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (8118) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (8388) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (8658) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (8908) APP_LOGIC: Person detected! Count: 1[0m
+[0;32mI (10358) APP_LOGIC: Person left.[0m
+[0;32mI (10578) DHT_SENSOR: Humidity: 65.0%, Temp: 30.0C[0m
+[0;32mI (15108) APP_LOGIC: Person detected! Count: 2[0m
+[0;32mI (15558) APP_LOGIC: Person left.[0m
+[0;32mI (15598) DHT_SENSOR: Humidity: 65.0%, Temp: 30.0C[0m
+[0;32mI (16558) APP_LOGIC: Person detected! Count: 3[0m
+[0;32mI (17258) APP_LOGIC: Person left.[0m
+[0;32mI (18758) APP_LOGIC: Person detected! Count: 4[0m
+[0;32mI (19208) APP_LOGIC: Person left.[0m
+[0;32mI (19458) APP_LOGIC: Person detected! Count: 5[0m
+[0;32mI (19908) APP_LOGIC: Person left.[0m
+[0;32mI (20408) APP_LOGIC: Person detected! Count: 6[0m
+[0;32mI (20618) DHT_SENSOR: Humidity: 65.0%, Temp: 30.0C[0m
+[0;32mI (20868) APP_LOGIC: Person left.[0m
+[0;32mI (24618) APP_LOGIC: Person detected! Count: 7[0m
+6
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 27 2025 01:15:04[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1bf08h (114440) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=0002bf30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=0002bf54 vaddr=3ffb0000 size=03f00h ( 16128) load[0m
+[0;32mI (139) esp_image: segment 3: paddr=0002fe5c vaddr=40080000 size=001bch (   444) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=8cdf0h (577008) map[0m
+[0;32mI (346) esp_image: segment 5: paddr=000bce18 vaddr=400801bc size=1775ch ( 96092) load[0m
+[0;32mI (394) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (394) boot: Disabling RNG early entropy source...[0m
+[0;32mI (405) cpu_start: Multicore app[0m
+[0;32mI (413) cpu_start: Pro cpu start user code[0m
+[0;32mI (413) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (414) app_init: Application information:[0m
+[0;32mI (414) app_init: Project name:     HTTP-ledcontrol[0m
+[0;32mI (418) app_init: App version:      1[0m
+[0;32mI (422) app_init: Compile time:     Jul 27 2025 01:14:47[0m
+[0;32mI (427) app_init: ELF file SHA256:  9730e0159...[0m
+[0;32mI (431) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (435) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (439) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (443) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (447) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (453) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (458) heap_init: At 3FFB81B8 len 00027E48 (159 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (469) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (474) heap_init: At 40097918 len 000086E8 (33 KiB): IRAM[0m
+[0;32mI (481) spi_flash: detected chip: generic[0m
+[0;32mI (483) spi_flash: flash io: dio[0m
+[0;32mI (488) main_task: Started on CPU0[0m
+[0;32mI (498) main_task: Calling app_main()[0m
+[0;32mI (518) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (518) DHT_SENSOR: DHT Sensor Task Started[0m
+[0;32mI (538) DHT_SENSOR: Humidity: 66.0%, Temp: 30.0C[0m
+[0;32mI (538) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (548) HCSR04_WRAPPER: HC-SR04 sensor initialized successfully.[0m
+[0;32mI (548) APP_LOGIC: Application Logic Task Started[0m
+[0;32mI (558) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (578) wifi:wifi driver task: 3ffc1538, prio:23, stack:6656, core=0[0m
+[0;32mI (588) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (588) wifi:wifi certification version: v7.0[0m
+[0;32mI (588) wifi:config NVS flash: enabled[0m
+[0;32mI (588) wifi:config nano formatting: disabled[0m
+[0;32mI (598) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (598) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (598) wifi:Init management short buffer num: 32[0m
+[0;32mI (608) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (608) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (618) wifi:Init static rx buffer num: 10[0m
+[0;32mI (618) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (628) wifi_init: rx ba win: 6[0m
+[0;32mI (628) wifi_init: accept mbox: 6[0m
+[0;32mI (628) wifi_init: tcpip mbox: 32[0m
+[0;32mI (628) wifi_init: udp mbox: 6[0m
+[0;32mI (638) wifi_init: tcp mbox: 6[0m
+[0;32mI (638) wifi_init: tcp tx win: 5760[0m
+[0;32mI (638) wifi_init: tcp rx win: 5760[0m
+[0;32mI (638) wifi_init: tcp mss: 1440[0m
+[0;32mI (648) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (648) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (658) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (668) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (748) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (828) wifi:mode : sta (20:43:a8:e5:4d:4c)[0m
+[0;32mI (828) wifi:enable tsf[0m
+[0;32mI (828) WIFI_MANAGER: WiFi connecting to Tro 1...[0m
+[0;32mI (828) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (828) HCSR04_WRAPPER: HC-SR04 sensor initialized successfully.[0m
+[0;32mI (838) WEB_SERVER: Web server started[0m
+[0;32mI (838) main_task: Returned from app_main()[0m
+[0;32mI (928) wifi:new:<5,0>, old:<1,0>, ap:<255,255>, sta:<5,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (928) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (958) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1008) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1108) wifi:connected with Tro 1, aid = 7, channel 5, BW20, bssid = 4c:12:e8:40:45:30[0m
+[0;32mI (1108) wifi:security: WPA2-PSK, phy: bgn, rssi: -56[0m
+[0;32mI (1108) wifi:pm start, type: 1[0m
+
+[0;32mI (1108) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1128) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2168) wifi:<ba-add>idx:0 (ifx:0, 4c:12:e8:40:45:30), tid:0, ssn:6, winSize:64[0m
+[0;32mI (2348) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (5308) APP_LOGIC: Person detected! Count: 1[0m
+[0;32mI (5558) DHT_SENSOR: Humidity: 66.0%, Temp: 30.0C[0m
+[0;32mI (6008) APP_LOGIC: Person left.[0m
+[0;32mI (6258) APP_LOGIC: Person detected! Count: 2[0m
+[0;32mI (7458) APP_LOGIC: Person left.[0m
+[0;32mI (7708) APP_LOGIC: Person detected! Count: 3[0m
+[0;32mI (8408) APP_LOGIC: Person left.[0m

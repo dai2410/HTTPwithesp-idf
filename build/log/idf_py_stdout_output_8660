@@ -1,0 +1,621 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 27 2025 01:15:04[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1bf08h (114440) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=0002bf30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=0002bf54 vaddr=3ffb0000 size=03f00h ( 16128) load[0m
+[0;32mI (139) esp_image: segment 3: paddr=0002fe5c vaddr=40080000 size=001bch (   444) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=8cdf0h (577008) map[0m
+[0;32mI (346) esp_image: segment 5: paddr=000bce18 vaddr=400801bc size=1775ch ( 96092) load[0m
+[0;32mI (394) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (394) boot: Disabling RNG early entropy source...[0m
+[0;32mI (405) cpu_start: Multicore app[0m
+[0;32mI (413) cpu_start: Pro cpu start user code[0m
+[0;32mI (413) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (414) app_init: Application information:[0m
+[0;32mI (414) app_init: Project name:     HTTP-ledcontrol[0m
+[0;32mI (418) app_init: App version:      1[0m
+[0;32mI (422) app_init: Compile time:     Jul 27 2025 01:14:47[0m
+[0;32mI (427) app_init: ELF file SHA256:  9730e0159...[0m
+[0;32mI (431) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (435) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (439) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (443) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (447) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (453) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (458) heap_init: At 3FFB81B8 len 00027E48 (159 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (469) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (474) heap_init: At 40097918 len 000086E8 (33 KiB): IRAM[0m
+[0;32mI (481) spi_flash: detected chip: generic[0m
+[0;32mI (483) spi_flash: flash io: dio[0m
+[0;32mI (488) main_task: Started on CPU0[0m
+[0;32mI (498) main_task: Calling app_main()[0m
+[0;32mI (518) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (518) DHT_SENSOR: DHT Sensor Task Started[0m
+[0;32mI (538) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (548) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (548) HCSR04_WRAPPER: HC-SR04 sensor initialized successfully.[0m
+[0;32mI (548) APP_LOGIC: Application Logic Task Started[0m
+[0;32mI (558) APP_LOGIC: Person detected! Count: 1[0m
+[0;32mI (568) wifi:wifi driver task: 3ffc1538, prio:23, stack:6656, core=0[0m
+[0;32mI (578) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (578) wifi:wifi certification version: v7.0[0m
+[0;32mI (578) wifi:config NVS flash: enabled[0m
+[0;32mI (578) wifi:config nano formatting: disabled[0m
+[0;32mI (588) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (588) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (598) wifi:Init management short buffer num: 32[0m
+[0;32mI (598) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (598) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (608) wifi:Init static rx buffer num: 10[0m
+[0;32mI (608) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (618) wifi_init: rx ba win: 6[0m
+[0;32mI (618) wifi_init: accept mbox: 6[0m
+[0;32mI (618) wifi_init: tcpip mbox: 32[0m
+[0;32mI (618) wifi_init: udp mbox: 6[0m
+[0;32mI (628) wifi_init: tcp mbox: 6[0m
+[0;32mI (628) wifi_init: tcp tx win: 5760[0m
+[0;32mI (628) wifi_init: tcp rx win: 5760[0m
+[0;32mI (638) wifi_init: tcp mss: 1440[0m
+[0;32mI (638) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (638) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (648) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (658) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (738) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (758) wifi:mode : sta (20:43:a8:e5:4d:4c)[0m
+[0;32mI (758) wifi:enable tsf[0m
+[0;32mI (768) WIFI_MANAGER: WiFi connecting to Tro 1...[0m
+[0;32mI (768) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (768) HCSR04_WRAPPER: HC-SR04 sensor initialized successfully.[0m
+[0;32mI (778) WEB_SERVER: Web server started[0m
+[0;32mI (778) main_task: Returned from app_main()[0m
+[0;32mI (878) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (878) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (958) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1008) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1108) wifi:connected with Tro 1, aid = 3, channel 8, BW20, bssid = 4c:12:e8:40:45:30[0m
+[0;32mI (1108) wifi:security: WPA2-PSK, phy: bgn, rssi: -55[0m
+[0;32mI (1118) wifi:pm start, type: 1[0m
+
+[0;32mI (1118) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1168) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2488) esp_netif_handlers: sta ip: 192.168.1.7, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (5568) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (10588) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (15608) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (20628) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (20768) APP_LOGIC: Person left.[0m
+[0;32mI (21018) APP_LOGIC: Person detected! Count: 2[0m
+[0;32mI (25648) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (30468) APP_LOGIC: Person left.[0m
+[0;32mI (30668) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (30968) APP_LOGIC: Person detected! Count: 3[0m
+[0;32mI (31418) APP_LOGIC: Person left.[0m
+[0;32mI (31668) APP_LOGIC: Person detected! Count: 4[0m
+[0;32mI (34868) APP_LOGIC: Person left.[0m
+[0;32mI (35688) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (36618) APP_LOGIC: Person detected! Count: 5[0m
+���������������������������������������������������������������� (40708) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C
+[0;32mI (41068) APP_LOGIC: Person left.[0m
+[0;32mI (45068) APP_LOGIC: Person detected! Count: 6[0m
+[0;32mI (45728) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (47518) APP_LOGIC: Person left.[0m
+[0;32mI (50518) APP_LOGIC: Person detected! Count: 7[0m
+[0;32mI (50748) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (50968) APP_LOGIC: Person left.[0m
+[0;32mI (51218) APP_LOGIC: Person detected! Count: 8[0m
+[0;32mI (51938) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (52208) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (52458) APP_LOGIC: Person left.[0m
+[0;32mI (52978) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (53248) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (53748) APP_LOGIC: Person detected! Count: 9[0m
+[0;32mI (54198) APP_LOGIC: Person left.[0m
+[0;32mI (54448) APP_LOGIC: Person detected! Count: 10[0m
+[0;32mI (54898) APP_LOGIC: Person left.[0m
+[0;32mI (55148) APP_LOGIC: Person detected! Count: 11[0m
+[0;32mI (55598) APP_LOGIC: Person left.[0m
+[0;32mI (55768) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (56098) APP_LOGIC: Person detected! Count: 12[0m
+[0;32mI (56548) APP_LOGIC: Person left.[0m
+[0;32mI (59548) APP_LOGIC: Person detected! Count: 13[0m
+[0;32mI (59998) APP_LOGIC: Person left.[0m
+[0;32mI (60248) APP_LOGIC: Person detected! Count: 14[0m
+[0;32mI (60698) APP_LOGIC: Person left.[0m
+[0;32mI (60788) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (61698) APP_LOGIC: Person detected! Count: 15[0m
+[0;32mI (62168) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (62668) APP_LOGIC: Person left.[0m
+[0;32mI (64188) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (64438) APP_LOGIC: Person detected! Count: 16[0m
+[0;32mI (65388) APP_LOGIC: Person left.[0m
+[0;32mI (65658) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (65808) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (65928) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (66178) APP_LOGIC: Person detected! Count: 17[0m
+[0;32mI (66628) APP_LOGIC: Person left.[0m
+[0;32mI (66878) APP_LOGIC: Person detected! Count: 18[0m
+[0;32mI (67328) APP_LOGIC: Person left.[0m
+[0;32mI (67578) APP_LOGIC: Person detected! Count: 19[0m
+[0;32mI (70828) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (71298) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (71798) APP_LOGIC: Person left.[0m
+[0;32mI (72048) APP_LOGIC: Person detected! Count: 20[0m
+[0;32mI (75018) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (75848) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (76788) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (77038) APP_LOGIC: Person left.[0m
+[0;32mI (77288) APP_LOGIC: Person detected! Count: 21[0m
+[0;32mI (78758) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (79508) APP_LOGIC: Person left.[0m
+[0;32mI (80868) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (81008) APP_LOGIC: Person detected! Count: 22[0m
+[0;32mI (81458) APP_LOGIC: Person left.[0m
+[0;32mI (81958) APP_LOGIC: Person detected! Count: 23[0m
+[0;32mI (82408) APP_LOGIC: Person left.[0m
+[0;32mI (85888) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (90908) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (95928) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (100948) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (105968) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (109738) wifi:<ba-add>idx:0 (ifx:0, 4c:12:e8:40:45:30), tid:0, ssn:5, winSize:64[0m
+[0;33mW (109928) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (109928) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (110988) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (111978) WEB_SERVER: LED turned ON[0m
+[0;32mI (112488) WEB_SERVER: LED turned ON[0m
+[0;32mI (113008) WEB_SERVER: LED turned OFF[0m
+[0;32mI (113518) WEB_SERVER: LED turned OFF[0m
+[0;32mI (113818) WEB_SERVER: LED turned ON[0m
+[0;32mI (114738) WEB_SERVER: LED turned OFF[0m
+[0;32mI (116008) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+����������������������������������������������������������������(121028) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C
+[0;32mI (126048) DHT_SENSOR: Humidity: 61.0%, Temp: 29.0C[0m
+[0;32mI (131068) DHT_SENSOR: Humidity: 61.0%, Temp: 29.0C[0m
+[0;32mI (136088) DHT_SENSOR: Humidity: 61.0%, Temp: 29.0C[0m
+���������������������������������������������������������������� (141108) DHT_SENSOR: Humidity: 61.0%, Temp: 29.0C
+[0;32mI (146128) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (151148) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (156168) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (161188) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (166208) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (171228) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (176248) DHT_SENSOR: Humidity: 61.0%, Temp: 29.0C[0m
+[0;32mI (181268) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (186288) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (191318) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (196338) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (201358) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (206378) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (211398) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (216418) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (221438) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (226458) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (231478) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (236498) DHT_SENSOR: Humidity: 61.0%, Temp: 29.0C[0m
+[0;32mI (241518) DHT_SENSOR: Humidity: 61.0%, Temp: 29.0C[0m
+[0;32mI (246538) DHT_SENSOR: Humidity: 61.0%, Temp: 29.0C[0m
+[0;32mI (251558) DHT_SENSOR: Humidity: 60.0%, Temp: 29.0C[0m
+[0;32mI (256578) DHT_SENSOR: Humidity: 61.0%, Temp: 29.0C[0m
+[0;32mI (261598) DHT_SENSOR: Humidity: 61.0%, Temp: 29.0C[0m
+���������������������������������������������������������������� (266618) DHT_SENSOR: Humidity: 60.0%, Temp: 30.0C
+[0;32mI (271638) DHT_SENSOR: Humidity: 60.0%, Temp: 30.0C[0m
+[0;32mI (276658) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (281678) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (286698) DHT_SENSOR: Humidity: 60.0%, Temp: 30.0C[0m
+[0;32mI (291718) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (296738) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (299248) APP_LOGIC: Person detected! Count: 24[0m
+[0;32mI (299698) APP_LOGIC: Person left.[0m
+[0;32mI (301758) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (306198) APP_LOGIC: Person detected! Count: 25[0m
+[0;32mI (306648) APP_LOGIC: Person left.[0m
+[0;32mI (306778) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (306898) APP_LOGIC: Person detected! Count: 26[0m
+���������������������������������������������������������������� (307348) APP_LOGIC: Person left.
+[0;32mI (307598) APP_LOGIC: Person detected! Count: 27[0m
+[0;32mI (308048) APP_LOGIC: Person left.[0m
+[0;32mI (308548) APP_LOGIC: Person detected! Count: 28[0m
+[0;32mI (309248) APP_LOGIC: Person left.[0m
+[0;32mI (311798) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+����������������������������������������������������������������(316818) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C
+[0;32mI (321838) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (326858) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (331878) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (336898) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (341918) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (342748) APP_LOGIC: Person detected! Count: 29[0m
+[0;32mI (343948) APP_LOGIC: Person left.[0m
+[0;32mI (344198) APP_LOGIC: Person detected! Count: 30[0m
+[0;32mI (346938) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (351958) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (354918) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (355188) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (356978) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (357438) APP_LOGIC: Person left.[0m
+[0;32mI (357688) APP_LOGIC: Person detected! Count: 31[0m
+[0;32mI (361998) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (367018) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (367158) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (367408) APP_LOGIC: Person left.[0m
+[0;32mI (367658) APP_LOGIC: Person detected! Count: 32[0m
+���������������������������������������������������������������� (368378) HCRS04 tag: Measurement error: 202
+
+[0;32mI (368648) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (368918) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (370688) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (370958) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (372038) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (373478) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (377058) DHT_SENSOR: Humidity: 60.0%, Temp: 30.0C[0m
+[0;32mI (377228) APP_LOGIC: Person left.[0m
+[0;32mI (377478) APP_LOGIC: Person detected! Count: 33[0m
+[0;32mI (382078) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (385698) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (386718) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (387098) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (387988) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (390258) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (392118) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (397138) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (402158) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (407178) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (412198) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+���������������������������������������������������������������� (417218) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C
+[0;32mI (422238) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (423008) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (423258) APP_LOGIC: Person left.[0m
+[0;32mI (423508) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (423758) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (424008) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (424258) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (424768) APP_LOGIC: Person detected! Count: 34[0m
+[0;32mI (425738) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (425988) APP_LOGIC: Person left.[0m
+[0;32mI (426258) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (427258) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (427288) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (427558) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (429558) APP_LOGIC: Person detected! Count: 35[0m
+[0;32mI (430008) APP_LOGIC: Person left.[0m
+[0;32mI (432288) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (433288) APP_LOGIC: Person detected! Count: 36[0m
+[0;32mI (433738) APP_LOGIC: Person left.[0m
+[0;32mI (434988) APP_LOGIC: Person detected! Count: 37[0m
+[0;32mI (435458) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (435728) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (435978) APP_LOGIC: Person left.[0m
+[0;32mI (437308) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (442248) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (442328) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (442768) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (443038) HCRS04 tag: Measurement error: 202[0m
+
+���������������������������������������������������������������� (443288) APP_LOGIC: Person detected! Count: 38
+[0;32mI (443738) APP_LOGIC: Person left.[0m
+[0;32mI (445508) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (445778) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (446048) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (446318) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (446588) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (447348) DHT_SENSOR: Humidity: 58.0%, Temp: 30.0C[0m
+[0;32mI (447378) HCRS04 tag: Measurement error: 202[0m
+
+���������������������������������������������������������������� (448398) HCRS04 tag: Measurement error: 202
+
+[0;32mI (448668) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (451188) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (451708) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (452368) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (453228) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (453498) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (453768) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (454038) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (454558) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (454828) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (455098) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (455368) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (455638) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (455908) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (456428) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (456698) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (456968) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (457238) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (457388) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (457508) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (457778) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (458048) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (458318) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (458588) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (458858) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (459858) APP_LOGIC: Person detected! Count: 39[0m
+[0;32mI (460308) APP_LOGIC: Person left.[0m
+[0;32mI (460578) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (461848) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (462118) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (462418) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (462418) DHT_SENSOR: Humidity: 58.0%, Temp: 30.0C[0m
+[0;32mI (462688) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (462958) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (463228) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (463498) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (463768) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (464038) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (464308) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (464578) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (464848) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (467368) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (467438) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (467638) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (468658) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (468928) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (469198) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (471468) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (472458) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (473968) APP_LOGIC: Person detected! Count: 40[0m
+[0;32mI (475168) APP_LOGIC: Person left.[0m
+[0;32mI (475418) APP_LOGIC: Person detected! Count: 41[0m
+[0;32mI (476618) APP_LOGIC: Person left.[0m
+[0;32mI (476868) APP_LOGIC: Person detected! Count: 42[0m
+[0;32mI (477318) APP_LOGIC: Person left.[0m
+[0;32mI (477478) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (477568) APP_LOGIC: Person detected! Count: 43[0m
+[0;32mI (478038) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (478308) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (478578) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (478828) APP_LOGIC: Person left.[0m
+[0;32mI (479098) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (479348) APP_LOGIC: Person detected! Count: 44[0m
+[0;32mI (480048) APP_LOGIC: Person left.[0m
+[0;32mI (480818) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (481088) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (481588) APP_LOGIC: Person detected! Count: 45[0m
+[0;32mI (482038) APP_LOGIC: Person left.[0m
+[0;32mI (482288) APP_LOGIC: Person detected! Count: 46[0m
+[0;32mI (482498) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (482748) APP_LOGIC: Person left.[0m
+[0;32mI (483018) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (483288) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (483558) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (487308) APP_LOGIC: Person detected! Count: 47[0m
+[0;32mI (487518) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (488518) APP_LOGIC: Person left.[0m
+[0;32mI (491038) HCRS04 tag: Measurement error: 202[0m
+
+���������������������������������������������������������������� (492538) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C
+[0;32mI (492568) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (493338) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (493608) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (497558) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (498378) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (498648) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (498918) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (499438) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (499708) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (499978) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (500248) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (500768) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (501038) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (501308) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (501578) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (501848) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (502118) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (502578) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (503888) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (504158) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (506428) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (506698) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (507598) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (507718) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (509238) HCRS04 tag: Measurement error: 202[0m
+
+���������������������������������������������������������������� (512008) HCRS04 tag: Measurement error: 202
+
+���������������������������������������������������������������� (512618) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C
+[0;32mI (513528) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (514278) APP_LOGIC: Person detected! Count: 48[0m
+[0;32mI (514728) APP_LOGIC: Person left.[0m
+[0;32mI (515748) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (516768) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (517038) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (517638) DHT_SENSOR: Humidity: 58.0%, Temp: 30.0C[0m
+[0;32mI (521058) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (522658) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (524078) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (524348) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (524618) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (524868) APP_LOGIC: Person detected! Count: 49[0m
+[0;32mI (525338) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (525838) APP_LOGIC: Person left.[0m
+[0;32mI (526358) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (526608) APP_LOGIC: Person detected! Count: 50[0m
+[0;32mI (527078) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (527598) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (527678) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (527868) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (528138) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (528408) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (528678) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (528928) APP_LOGIC: Person left.[0m
+[0;32mI (529428) APP_LOGIC: Person detected! Count: 51[0m
+[0;32mI (532698) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (537718) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (541378) APP_LOGIC: Person left.[0m
+[0;32mI (542128) APP_LOGIC: Person detected! Count: 52[0m
+[0;32mI (542578) APP_LOGIC: Person left.[0m
+[0;32mI (542738) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (543598) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (546598) APP_LOGIC: Person detected! Count: 53[0m
+[0;32mI (547758) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (548048) APP_LOGIC: Person left.[0m
+���������������������������������������������������������������� (550298) APP_LOGIC: Person detected! Count: 54
+[0;32mI (551998) APP_LOGIC: Person left.[0m
+[0;32mI (552248) APP_LOGIC: Person detected! Count: 55[0m
+[0;32mI (552778) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (553448) APP_LOGIC: Person left.[0m
+[0;32mI (554448) APP_LOGIC: Person detected! Count: 56[0m
+[0;32mI (556898) APP_LOGIC: Person left.[0m
+[0;32mI (557798) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m
+[0;32mI (557898) APP_LOGIC: Person detected! Count: 57[0m
+[0;32mI (558848) APP_LOGIC: Person left.[0m
+[0;32mI (560598) APP_LOGIC: Person detected! Count: 58[0m
+[0;32mI (562818) DHT_SENSOR: Humidity: 59.0%, Temp: 30.0C[0m

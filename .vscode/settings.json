@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "wifi_manager.h": "c",
+        "web_server.h": "c",
+        "led_control.h": "c",
+        "dht_sensor.h": "c",
+        "dht.h": "c",
+        "hc-sr04_sensor.h": "c",
+        "app_logic.h": "c",
+        "buzzer_control.h": "c",
+        "hcsr04_driver.h": "c"
+    }
+}
