@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "HTTP-ledcontrol",
-    "project_version":    "1",
+    "project_version":    "fc75637-dirty",
     "project_path":       "D:/workspace/esp32/Bai-tap/HTTP-ledcontrol",
     "idf_path":           "D:/express/Espressif/frameworks/esp-idf-v5.4.1",
     "build_dir":          "D:/workspace/esp32/Bai-tap/HTTP-ledcontrol/build",
@@ -1660,7 +1660,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "D:/workspace/esp32/Bai-tap/HTTP-ledcontrol/build/esp-idf/web_server/libweb_server.a",
-            "sources": [ "D:/workspace/esp32/Bai-tap/HTTP-ledcontrol/components/web_server/web_server.c" ],
+            "sources": [ "D:/workspace/esp32/Bai-tap/HTTP-ledcontrol/components/web_server/web_server.c", "D:/workspace/esp32/Bai-tap/HTTP-ledcontrol/build/index.html.S" ],
             "include_dirs": [ "include" ]
         },
         "wifi_manager": {

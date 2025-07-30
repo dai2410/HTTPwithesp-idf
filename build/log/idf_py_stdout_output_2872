@@ -1,0 +1,2719 @@
+0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 29 2025 16:37:59[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1bef8h (114424) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=0002bf20 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=0002bf44 vaddr=3ffb0000 size=03f00h ( 16128) load[0m
+[0;32mI (139) esp_image: segment 3: paddr=0002fe4c vaddr=40080000 size=001cch (   460) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=8ce00h (577024) map[0m
+[0;32mI (346) esp_image: segment 5: paddr=000bce28 vaddr=400801cc size=1774ch ( 96076) load[0m
+[0;32mI (394) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (394) boot: Disabling RNG early entropy source...[0m
+[0;32mI (405) cpu_start: Multicore app[0m
+[0;32mI (413) cpu_start: Pro cpu start user code[0m
+[0;32mI (413) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (414) app_init: Application information:[0m
+[0;32mI (414) app_init: Project name:     HTTP-ledcontrol[0m
+[0;32mI (418) app_init: App version:      fc75637-dirty[0m
+[0;32mI (423) app_init: Compile time:     Jul 29 2025 16:37:46[0m
+[0;32mI (428) app_init: ELF file SHA256:  c68b46802...[0m
+[0;32mI (432) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (436) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (440) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (444) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (448) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (454) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (459) heap_init: At 3FFB81B8 len 00027E48 (159 KiB): DRAM[0m
+[0;32mI (465) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (470) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (475) heap_init: At 40097918 len 000086E8 (33 KiB): IRAM[0m
+[0;32mI (482) spi_flash: detected chip: generic[0m
+[0;32mI (484) spi_flash: flash io: dio[0m
+[0;32mI (489) main_task: Started on CPU0[0m
+[0;32mI (499) main_task: Calling app_main()[0m
+[0;32mI (519) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (519) DHT_SENSOR: DHT Sensor Task Started[0m
+[0;32mI (539) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (549) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (549) HCSR04_WRAPPER: HC-SR04 sensor initialized successfully.[0m
+[0;32mI (549) APP_LOGIC: Application Logic Task Started[0m
+[0;32mI (559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (569) wifi:wifi driver task: 3ffc1538, prio:23, stack:6656, core=0[0m
+[0;32mI (579) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (579) wifi:wifi certification version: v7.0[0m
+[0;32mI (579) wifi:config NVS flash: enabled[0m
+[0;32mI (579) wifi:config nano formatting: disabled[0m
+[0;32mI (589) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (589) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (589) wifi:Init management short buffer num: 32[0m
+[0;32mI (599) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (599) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (609) wifi:Init static rx buffer num: 10[0m
+[0;32mI (609) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (619) wifi_init: rx ba win: 6[0m
+[0;32mI (619) wifi_init: accept mbox: 6[0m
+[0;32mI (619) wifi_init: tcpip mbox: 32[0m
+[0;32mI (619) wifi_init: udp mbox: 6[0m
+[0;32mI (629) wifi_init: tcp mbox: 6[0m
+[0;32mI (629) wifi_init: tcp tx win: 5760[0m
+[0;32mI (629) wifi_init: tcp rx win: 5760[0m
+[0;32mI (639) wifi_init: tcp mss: 1440[0m
+[0;32mI (639) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (639) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (649) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (659) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (749) wifi:mode : sta (20:43:a8:e5:4d:4c)[0m
+[0;32mI (749) wifi:enable tsf[0m
+[0;32mI (749) WIFI_MANAGER: WiFi connecting to Haayf...[0m
+[0;32mI (759) WEB_SERVER: Web server started[0m
+[0;32mI (759) main_task: Returned from app_main()[0m
+[0;32mI (759) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (759) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (779) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (799) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (829) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (859) wifi:connected with Haayf, aid = 2, channel 6, BW20, bssid = da:f2:29:af:29:bf[0m
+[0;32mI (859) wifi:security: WPA2-PSK, phy: bgn, rssi: -55[0m
+[0;32mI (859) wifi:pm start, type: 1[0m
+
+[0;32mI (859) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (879) wifi:<ba-add>idx:0 (ifx:0, da:f2:29:af:29:bf), tid:0, ssn:0, winSize:64[0m
+[0;32mI (929) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (929) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1099) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (1369) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (1639) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (1909) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (1919) esp_netif_handlers: sta ip: 192.168.83.137, mask: 255.255.255.0, gw: 192.168.83.184[0m
+[0;32mI (2179) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (2449) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (2719) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (2989) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (3259) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (3529) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (3799) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (4069) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (4339) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (4609) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (4879) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (5129) APP_LOGIC: Person detected! Count: 1[0m
+[0;32mI (5569) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (5849) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (6119) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (6389) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (6659) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (6929) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (7199) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (7469) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (7739) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (8009) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (8279) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (8549) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (8819) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (9089) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (9359) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (9629) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (9899) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (10169) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (10439) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (10589) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (10709) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (10979) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (11249) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (11519) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (11789) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (12059) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (12329) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (12599) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (12869) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (13139) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (13409) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (13679) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (14949) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (15469) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (15609) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (15739) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (16259) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (16529) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (17049) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (17319) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (17579) APP_LOGIC: Person left.[0m
+[0;32mI (17849) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (18119) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (18389) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (18659) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (18929) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (19179) APP_LOGIC: Person detected! Count: 2[0m
+[0;32mI (19649) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (19919) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (20629) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (20689) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (20939) APP_LOGIC: Person left.[0m
+[0;32mI (21439) APP_LOGIC: Person detected! Count: 3[0m
+[0;32mI (22139) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (25649) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (30669) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (30689) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (31199) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (31449) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (31969) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (32219) APP_LOGIC: Person left.[0m
+[0;32mI (32469) APP_LOGIC: Person detected! Count: 4[0m
+[0;32mI (32929) APP_LOGIC: Person left.[0m
+[0;32mI (33179) APP_LOGIC: Person detected! Count: 5[0m
+[0;32mI (33629) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (33879) APP_LOGIC: Person left.[0m
+[0;32mI (34129) APP_LOGIC: Person detected! Count: 6[0m
+[0;32mI (34599) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (34849) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (35099) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (35369) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (35639) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (35689) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (36159) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (36429) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (38199) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (38719) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (38989) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (39259) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (39529) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (39779) APP_LOGIC: Person left.[0m
+[0;32mI (40029) APP_LOGIC: Person detected! Count: 7[0m
+[0;32mI (40709) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (41249) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (41499) APP_LOGIC: Person left.[0m
+[0;32mI (41769) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (42039) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (42309) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (42809) APP_LOGIC: Person detected! Count: 8[0m
+[0;32mI (43529) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (43799) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (44569) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (45589) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (45729) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (46089) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (46339) APP_LOGIC: Person left.[0m
+[0;32mI (46589) APP_LOGIC: Person detected! Count: 9[0m
+[0;32mI (47559) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (48059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (48319) APP_LOGIC: Person left.[0m
+[0;32mI (48819) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (49069) APP_LOGIC: Person detected! Count: 10[0m
+[0;32mI (49539) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (49809) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (50069) APP_LOGIC: Person left.[0m
+[0;32mI (50319) APP_LOGIC: Person detected! Count: 11[0m
+[0;32mI (50749) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (51029) APP_LOGIC: Person left.[0m
+[0;32mI (51299) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (51549) APP_LOGIC: Person detected! Count: 12[0m
+[0;32mI (52259) APP_LOGIC: Person left.[0m
+[0;32mI (52779) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (53049) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (53799) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (54049) APP_LOGIC: Person detected! Count: 13[0m
+[0;32mI (54499) APP_LOGIC: Person left.[0m
+[0;32mI (55269) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (55519) APP_LOGIC: Person detected! Count: 14[0m
+[0;32mI (55769) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (55969) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (56219) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (56469) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (60789) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (61719) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (61969) APP_LOGIC: Person left.[0m
+[0;32mI (62219) APP_LOGIC: Person detected! Count: 15[0m
+[0;32mI (62669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (62919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (63169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (63919) APP_LOGIC: Person left.[0m
+[0;32mI (65809) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (67419) APP_LOGIC: Person detected! Count: 16[0m
+[0;32mI (68129) APP_LOGIC: Person left.[0m
+[0;32mI (68639) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (69139) APP_LOGIC: Person detected! Count: 17[0m
+[0;32mI (69589) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (69839) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (70099) APP_LOGIC: Person left.[0m
+[0;32mI (70349) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (70599) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (70829) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (70849) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (71099) APP_LOGIC: Person detected! Count: 18[0m
+[0;32mI (71549) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (73799) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (74049) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (74299) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (74549) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (74799) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (75049) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (75299) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (75549) APP_LOGIC: Person left.[0m
+[0;32mI (75849) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (76059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (76309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (76559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (76809) APP_LOGIC: Person detected! Count: 19[0m
+[0;32mI (77509) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (77759) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (78259) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (78509) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (78759) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (79009) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (79269) APP_LOGIC: Person left.[0m
+[0;32mI (79519) APP_LOGIC: Person detected! Count: 20[0m
+[0;32mI (79969) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (80869) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (85469) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (85719) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (85889) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (88719) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (88969) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (90469) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (90719) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (90909) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (91219) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (91469) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (91719) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (91969) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (92219) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (92719) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (93219) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (93719) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (95469) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (95719) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (95929) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (96469) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (97719) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (97969) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (100949) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (105969) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (107469) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (107719) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (107969) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (110719) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (110989) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (110989) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (111239) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (111739) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (112239) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (112489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (112739) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (112989) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (116009) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (121029) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (122779) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (123029) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (123279) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (123529) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (123779) APP_LOGIC: Person left.[0m
+[0;32mI (124039) APP_LOGIC: Person detected! Count: 21[0m
+[0;32mI (124489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (124989) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (125489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (125989) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (126049) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (126489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (126739) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (126989) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (127239) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (127489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (127739) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (127989) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (128239) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (128489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (128739) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (129239) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (129739) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (130489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (130739) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (131069) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (131739) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (131989) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (132989) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (134489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (136089) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (138739) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (141109) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (142489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (144239) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (144489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (144989) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (145239) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (146129) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (151149) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (153239) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (153489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (154239) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (154489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (156169) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (156489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (156739) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (161189) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (164239) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (164489) APP_LOGIC: Person left.[0m
+[0;32mI (164739) APP_LOGIC: Person detected! Count: 22[0m
+[0;32mI (166209) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (167459) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (167709) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (168459) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (168709) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (169709) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (169959) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (171229) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (171979) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (172229) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (172729) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (173479) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (173729) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (174979) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (175229) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (175729) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (175979) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (176249) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (178749) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (178999) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (179749) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (180999) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (181269) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (183269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (183519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (184269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (184519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (186289) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (186549) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (187049) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (187299) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (190049) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (190299) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (191049) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (191319) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (192319) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (192569) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (193069) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (195819) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (195829) WEB_SERVER: LED ON[0m
+[0;32mI (196349) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (196349) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (196599) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (197039) WEB_SERVER: LED OFF[0m
+[0;32mI (197349) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (197599) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (198099) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (198349) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (199099) APP_LOGIC: Person left.[0m
+[0;32mI (199359) APP_LOGIC: Person detected! Count: 23[0m
+[0;32mI (200309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (201059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (201309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (201369) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (202809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (203059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (203559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (205059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (206389) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (206559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (206809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (207559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (207809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (208559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (208809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (209309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (210059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (210309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (210809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (211059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (211409) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (213059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (214559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (214809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (215309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (216059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (216309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (216429) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (217309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (217559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (219309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (219559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (220309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (220559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (221449) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (221809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (222059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (222559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (222809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (223559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (223809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (224559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (224809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (225309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (225559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (226059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (226469) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (226809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (227059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (227809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (228059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (228559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (228809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (229309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (230559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (230809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (231309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (231489) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (231559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (232809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (233059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (233559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (233809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (235059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (235309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (236309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (236509) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (236559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (237059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (237309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (237809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (238059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (238559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (239809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (240059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (240559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (240809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (241529) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (241559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (241809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (242309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (243059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (243309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (244309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (244559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (245059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (245809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (246059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (246549) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (246559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (246809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (247559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (247809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (248309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (249309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (249559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (250059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (250809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (251059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (251579) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (251579) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (252079) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (252329) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (253079) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (253329) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (253829) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (254829) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (255079) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (255829) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (256079) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (256609) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (256609) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (256859) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (257109) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (257359) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (258109) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (258359) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (258859) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (259859) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (260109) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (260609) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (260859) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (261359) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (261639) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (261639) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (262139) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (262389) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (262889) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (263139) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (263389) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (263639) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (264139) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (264389) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (264889) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (265139) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (265889) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (266139) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (266659) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (266909) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (267159) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (267659) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (267909) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (268659) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (268909) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (269159) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (269409) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (270159) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (270409) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (270909) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (271159) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (271689) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (271689) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (272189) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (272439) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (272939) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (273939) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (274189) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (274939) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (275189) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (275439) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (275689) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (276189) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (276709) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (276719) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (276969) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (277469) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (277719) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (278469) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (278719) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (279219) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (279969) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (280219) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (280469) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (280719) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (281229) APP_LOGIC: Person left.[0m
+[0;32mI (281479) APP_LOGIC: Person detected! Count: 24[0m
+[0;32mI (281739) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (282429) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (283179) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (283429) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (283929) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (284179) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (284679) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (284929) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (285179) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (285929) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (286179) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (286679) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (286759) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (287429) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (287679) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (288179) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (288429) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (288679) APP_LOGIC: Person left.[0m
+[0;32mI (289189) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (289689) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (289939) APP_LOGIC: Person detected! Count: 25[0m
+[0;32mI (290389) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (290639) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (290889) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (291139) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (291389) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (291639) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (291779) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (291889) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (292139) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (292639) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (293139) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (293639) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (294139) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (294389) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (294639) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (294889) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (295139) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (295389) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (295889) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (296389) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (296639) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (296799) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (296889) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (297639) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (297889) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (298139) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (298639) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (299159) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (299429) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (299699) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (299969) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (300239) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (300489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (300739) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (300989) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (301249) APP_LOGIC: Person left.[0m
+[0;32mI (301819) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (302299) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (302569) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (303069) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (303319) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (303569) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (303819) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (304069) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (304319) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (304589) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (304839) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (305599) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (305849) APP_LOGIC: Person detected! Count: 26[0m
+[0;32mI (306299) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (306569) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (306839) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (306859) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (307119) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (307369) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (307619) APP_LOGIC: Person left.[0m
+[0;32mI (308119) APP_LOGIC: Person detected! Count: 27[0m
+[0;32mI (309069) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (309569) APP_LOGIC: Person left.[0m
+[0;32mI (309819) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (310069) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (310319) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (310569) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (310819) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (311069) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (311319) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (311569) APP_LOGIC: Person detected! Count: 28[0m
+[0;32mI (311859) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (312019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (312269) APP_LOGIC: Person left.[0m
+[0;32mI (312519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (313789) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (314059) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (314329) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (314599) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (314869) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (315139) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (315409) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (315679) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (316199) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (316469) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (316739) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (316879) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (317509) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (317779) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (318029) APP_LOGIC: Person detected! Count: 29[0m
+[0;32mI (318499) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (318769) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (319039) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (319309) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (319579) HCRS04 tag: Measurement error: 202[0m
+
+[0;32mI (321899) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (326919) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (331939) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (336959) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (341979) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (346999) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (352019) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (357039) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (362059) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (367079) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (372099) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (377119) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (382139) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (387159) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (392179) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (397199) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (402219) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (407239) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (412259) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (417279) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (422299) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (427319) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (432339) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (437359) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (442379) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (447409) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (452429) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (457449) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (459199) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (459449) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (462469) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (467489) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (472509) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (477529) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (482549) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (487569) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (492589) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (497609) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (502629) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (507649) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (512669) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (517689) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (522709) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (527729) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (532749) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (537769) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (542789) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (547809) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (552829) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (557849) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (562869) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (566369) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (566619) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (567889) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (572909) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (577929) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (582949) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (587969) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (592989) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (598009) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (603029) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (608049) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (613069) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (618089) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (623109) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (628129) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (633149) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (638169) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (643199) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (648219) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (653239) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (658259) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (663279) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (668299) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (673319) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (678339) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (683359) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (688379) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (693399) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (698419) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (703439) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (708459) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (713479) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (718499) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (723519) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (728539) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (733559) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (738579) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (743599) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (748619) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (753639) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (758659) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (763679) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (768699) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (773719) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (778739) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (783759) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (788779) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (793799) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (798819) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (803839) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (808859) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (813879) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (818899) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (823919) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (828939) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (833959) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (838979) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (843999) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (849019) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (854039) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (859059) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (864079) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (869099) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (874119) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (879139) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (884159) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (889179) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (894199) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (899229) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (904249) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (909269) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (914289) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (919309) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (924329) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (929349) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (934369) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (939389) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (944409) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (949429) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (954449) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (959469) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (964489) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (969509) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (974529) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (979549) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (984569) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (989589) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (994609) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (999629) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1004649) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1009669) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1014689) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1019709) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1022959) APP_LOGIC: Person left.[0m
+[0;32mI (1023209) APP_LOGIC: Person detected! Count: 30[0m
+[0;32mI (1024729) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1029749) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1034769) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1039789) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (1043409) APP_LOGIC: Person left.[0m
+[0;32mI (1043659) APP_LOGIC: Person detected! Count: 31[0m
+[0;32mI (1044809) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1049829) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1054849) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1057359) APP_LOGIC: Person left.[0m
+[0;32mI (1059609) APP_LOGIC: Person detected! Count: 32[0m
+[0;32mI (1059869) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1060309) APP_LOGIC: Person left.[0m
+[0;32mI (1060559) APP_LOGIC: Person detected! Count: 33[0m
+[0;32mI (1061009) APP_LOGIC: Person left.[0m
+[0;32mI (1062509) APP_LOGIC: Person detected! Count: 34[0m
+[0;32mI (1062959) APP_LOGIC: Person left.[0m
+[0;32mI (1064889) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1067959) APP_LOGIC: Person detected! Count: 35[0m
+[0;32mI (1068659) APP_LOGIC: Person left.[0m
+[0;32mI (1068909) APP_LOGIC: Person detected! Count: 36[0m
+[0;32mI (1069909) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1070609) APP_LOGIC: Person left.[0m
+[0;32mI (1071609) APP_LOGIC: Person detected! Count: 37[0m
+[0;32mI (1072809) APP_LOGIC: Person left.[0m
+[0;32mI (1073059) APP_LOGIC: Person detected! Count: 38[0m
+[0;32mI (1073509) APP_LOGIC: Person left.[0m
+[0;32mI (1074259) APP_LOGIC: Person detected! Count: 39[0m
+[0;32mI (1074929) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1078209) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1078709) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1078959) APP_LOGIC: Person left.[0m
+[0;32mI (1079209) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1079459) APP_LOGIC: Person detected! Count: 40[0m
+[0;32mI (1079909) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1079949) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1080159) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1080659) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1084969) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1086909) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1087169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1087419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1087669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1088169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1088419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1088919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1089169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1089669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1089989) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1090419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1090669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1090919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1091169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1091919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1092669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1092919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1093669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1094669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1094919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1095009) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1095419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1096419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1096669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1097169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1098169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1098419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1099169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1099419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1099919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1100029) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1100169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1100419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1100669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1101169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1101669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1101919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1102169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1102419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1102669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1102919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1103169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1103419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1103669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1103919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1104169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1104669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1105049) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1105169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1105419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1105669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1105919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1106169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1106419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1106669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1106919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1107169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1107419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1107669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1108169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1108669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1109169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1109419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1109669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1109919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1110069) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1110169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1110419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1110669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1110919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1111169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1111419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1111669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1112169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1112669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1113169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1113419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1113669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1113919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1114419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1114919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1115089) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1115419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1115669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1115919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1116169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1116419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1116669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1116919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1117169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1117419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1117669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1117919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1118419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1118919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1119169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1119419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1119669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1119919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1120109) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1120169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1120419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1120669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1120919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1121169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1121419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1121669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1121919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1122419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1122919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1123169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1123419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1123669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1123919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1124169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1124419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1124669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1124919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1125129) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1125169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1125419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1125919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1126419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1126919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1127169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1127419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1127669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1127919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1128169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1128419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1128669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1129169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1129419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1129919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1130149) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1130419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1130919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1131169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1131419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1131669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1131919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1132169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1132419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1132669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1132919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1133169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1133419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1133919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1134419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1134669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1134919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1135179) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1135179) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1135429) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1135929) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1136429) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1136679) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1136929) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1137179) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1137429) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1137679) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1137929) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1138179) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1138429) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1138679) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1138929) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1139429) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1139929) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1140209) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1140209) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1140459) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1140709) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1140959) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1141459) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1141959) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1142209) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1142459) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1142709) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1142959) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1143209) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1143459) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1143709) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1143959) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1144209) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1144459) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1144959) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1145229) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1145229) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1145479) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1145979) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1146229) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1146479) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1146729) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1146979) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1147229) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1147479) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1147729) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1147979) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1148479) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1148979) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1149479) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1149729) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1150259) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1150259) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1150509) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1151009) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1151509) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1151759) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1152259) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1152509) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1152759) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1153009) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1153259) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1153509) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1153759) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1154009) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1154509) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1155009) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1155289) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1155289) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1155539) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1156039) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1156539) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1157039) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1157289) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1157539) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1157789) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1158039) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1158289) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1158539) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1158789) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1159039) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1159289) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1159539) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1160039) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1160309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1160309) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1160559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1161059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1161309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1161809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1162059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1162309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1162559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1162809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1163059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1163309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1163559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1164059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1164559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1164809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1165059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1165339) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1165339) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1165589) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1166089) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1166589) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1166839) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1167089) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1167339) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1167589) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1167839) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1168089) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1168339) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1168589) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1168839) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1169089) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1169589) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1170089) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1170369) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (1170369) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1170619) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1170869) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1171119) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1171619) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1172119) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1172619) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1172869) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1173369) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1173619) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1173869) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1174119) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1174369) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1174619) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1174869) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1175119) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1175389) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (1175619) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1176119) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1176619) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1176869) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1177369) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1177619) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1177869) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1178119) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1178369) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1178619) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1178869) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1179119) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1179369) APP_LOGIC: Person left.[0m
+[0;32mI (1179619) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1179869) APP_LOGIC: Person detected! Count: 41[0m
+[0;32mI (1180319) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1180409) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1180569) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1180819) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1181069) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1181319) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1181569) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1181819) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1182069) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1182319) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1182569) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1182819) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1183069) APP_LOGIC: Person left.[0m
+[0;32mI (1183319) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1183569) APP_LOGIC: Person detected! Count: 42[0m
+[0;32mI (1184019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1184269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1184519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1184769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1185269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1185429) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (1185519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1185769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1186019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1186269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1186519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1186769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1187019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1187269) APP_LOGIC: Person left.[0m
+[0;32mI (1187519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1188019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1188269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1188519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1188769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1189269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1189519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1189769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1190019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1190269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1190449) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1190519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1190769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1191019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1191269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1191519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1191769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1192019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1192269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1192519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1192769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1193019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1193269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1193519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1193769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1194019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1194269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1194519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1194769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1195019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1195269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1195469) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1195519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1195769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1196019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1196269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1196519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1196769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1197019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1197269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1197519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1197769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1198019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1198269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1198519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1198769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1199019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1199269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1199519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1199769) APP_LOGIC: Person detected! Count: 43[0m
+[0;32mI (1200489) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1205509) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1210529) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1212529) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1212779) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1213029) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1213279) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1213529) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1213779) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1214029) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1214279) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1214529) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1214779) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1215029) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1215279) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1215559) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1215559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1215809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1216059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1216309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1216559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1216809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1217059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1217309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1217559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1217809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1218059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1218309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1218559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1218809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1219059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1219309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1219559) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1219809) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1220059) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1220309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1220589) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1220589) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1220839) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1221089) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1221339) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1221589) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1221839) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1222089) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1222339) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1222589) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1222839) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1223089) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1223339) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1223589) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1223839) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1224089) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1224339) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1224589) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1224839) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1225089) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1225339) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1225619) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1225619) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1225869) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1226119) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1226369) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1226619) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1226869) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1227119) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1227369) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1227619) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1227869) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1228119) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1228369) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1228619) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1228869) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1229119) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1229369) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1229619) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1229869) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1230119) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1230369) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1230649) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1230649) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1230899) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1231149) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1231399) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1231649) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1231899) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1232149) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1232399) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1232649) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1232899) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1233149) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1233399) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1233649) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1233899) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1234149) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1234399) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1234649) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1234899) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1235149) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1235399) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1235679) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1235679) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1235929) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1236179) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1236679) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1236929) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1237179) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1237429) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1237679) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1237929) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1238179) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1238429) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1238679) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1238929) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1239179) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1239429) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1239679) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1239929) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1240179) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1240429) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1240699) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1240709) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1240959) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1241209) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1241459) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1241709) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1241959) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1242209) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1242459) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1242709) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1242959) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1243209) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1243459) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1243709) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1243959) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1244209) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1244459) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1244709) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1244959) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1245209) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1245459) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1245739) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (1245739) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1245989) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1246239) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1246489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1246739) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1246989) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1247239) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1247489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1247739) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1247989) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1248239) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1248489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1248739) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1248989) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1249239) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1249489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1249739) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1249989) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1250239) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1250489) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1250759) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1250769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1251019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1251269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1251519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1251769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1252019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1252269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1252519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1252769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1253019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1253269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1253519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1253769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1254019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1254269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1254519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1254769) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1255019) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1255269) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1255519) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1255789) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1255789) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1256039) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1256289) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1256539) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1256789) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1257039) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1257289) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1257539) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1257789) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1258039) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1258289) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1258539) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1258789) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1259039) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1259289) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1259539) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1259789) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1260039) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1260289) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1260539) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1260809) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1260819) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1261069) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1261319) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1261569) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1261819) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1262069) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1262319) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1262569) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1262819) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1263069) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1263319) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1263569) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1263819) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1264069) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1264319) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1264569) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1264819) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1265069) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1265319) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1265569) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1265849) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1265849) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1266099) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1266349) APP_LOGIC: Person left.[0m
+[0;32mI (1266599) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1266849) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1267099) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1267349) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1267859) APP_LOGIC: Person detected! Count: 44[0m
+[0;32mI (1268309) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1268809) APP_LOGIC: Person left.[0m
+[0;32mI (1270559) APP_LOGIC: Person detected! Count: 45[0m
+[0;32mI (1270869) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (1271509) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1272009) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1272259) APP_LOGIC: Person left.[0m
+[0;32mI (1275889) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1280909) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1285929) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1290949) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (1293259) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1293509) APP_LOGIC: Person detected! Count: 46[0m
+[0;32mI (1293959) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1294209) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1294709) APP_LOGIC: Person left.[0m
+[0;32mI (1295979) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (1301009) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (1304009) APP_LOGIC: Person detected! Count: 47[0m
+[0;32mI (1304459) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1304709) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1304959) APP_LOGIC: Person left.[0m
+[0;32mI (1305209) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1305459) APP_LOGIC: Person detected! Count: 48[0m
+[0;32mI (1305909) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1306029) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (1306159) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1306409) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1306659) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1306909) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1307159) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1307409) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1307659) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1307909) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1308159) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1308409) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1308659) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1308909) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1309159) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1309409) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1309659) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1309909) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1310159) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1310409) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1310659) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1310909) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1311049) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1311159) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1311409) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1311659) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1311909) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1312159) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1312409) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1312659) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1312909) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1313159) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1313409) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1313659) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1314159) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1314409) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1314659) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1314909) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1315159) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1315409) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1315669) APP_LOGIC: Person left.[0m
+[0;32mI (1315919) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1316069) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1316169) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1316419) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1316669) HCRS04 tag: Measurement error: 200[0m
+
+[0;32mI (1316919) APP_LOGIC: Person detected! Count: 49[0m
+[0;32mI (1321089) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1326109) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1331129) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
+[0;32mI (1336149) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1341179) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1346199) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1351219) DHT_SENSOR: Humidity: 42.0%, Temp: 27.0C[0m
+[0;32mI (1356239) DHT_SENSOR: Humidity: 41.0%, Temp: 27.0C[0m
